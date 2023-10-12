@@ -9,8 +9,7 @@ import { TaskList } from '../../model/task-list';
 export class TodoListComponent implements OnInit {
 
   public taskList: Array<TaskList> = [
-    { task: 'Task 1', checked: true },
-    { task: 'Task 2', checked: false },
+  
   ];
   constructor() { }
   ngOnInit(): void {
@@ -19,6 +18,9 @@ export class TodoListComponent implements OnInit {
   public deteleItemTaskList(event: number) {
 
     this.taskList.splice(event, 1);
+  }
+  public setEmitTaskList(event: string){
+   this.taskList.push({task: event, checked: false });
   }
   public deleteAllTaskList() {
     const confirm = window.confirm('Você deseja excluir todos os itens da lista?');
