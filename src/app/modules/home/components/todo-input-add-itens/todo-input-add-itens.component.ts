@@ -10,7 +10,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class TodoInputAddItensComponent implements OnInit {
   @Output() public emitItemTaskList = new EventEmitter();
 
-  public addItemTaskList: string = "";
+  public addItemTaskList: String = "";
   constructor() { }
 
   ngOnInit(): void {

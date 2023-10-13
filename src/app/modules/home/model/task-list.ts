@@ -1,4 +1,4 @@
 export interface TaskList {
-    task: String;
-    checked: Boolean;
-}
+    task: string,
+    checked: boolean;
+  }
